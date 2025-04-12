@@ -35,7 +35,7 @@ function App() {
 
             {/* How to dynamically generate a list */}
 
-            {CORE_CONCEPTS.map((conceptItem) => <CoreConcept {...conceptItem} />)}
+            {CORE_CONCEPTS.map((conceptItem) => <CoreConcept key={conceptItem.title}{...conceptItem} />)}
           </ul>
         </section>
         <section id="examples">
